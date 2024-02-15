@@ -4,6 +4,7 @@ import JadwalSholatView from "../views/JadwalSholatView.vue";
 import AsmaulHusnaView from "../views/AsmaulHusnaView.vue";
 import BacaAlQuranView from "../views/BacaAlQuranView.vue";
 import DoaHarianView from "../views/DoaHarianView.vue";
+import ErrorView from "../views/ErrorView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -46,6 +47,14 @@ const router = createRouter({
       component: DoaHarianView,
       meta: {
         title: "Do'a Harian - App Islami",
+      },
+    },
+    {
+      path: "/error",
+      name: "404 Not Found",
+      component: ErrorView,
+      meta: {
+        title: "404 Not Found - App Islami",
       },
     },
   ],
