@@ -33,7 +33,7 @@
 
             <div class="mt-14 md:mt-20 mb-56">
                 <div class="flex flex-wrap justify-normal md:justify-around gap-7" id="list-surah">
-                    <router-link :to="'/baca-al-quran/surah/' + item.nomor"
+                    <a :href="'/baca-al-quran/surah/' + item.nomor"
                         class="p-3 border-2 border-green-500 rounded-lg w-full md:w-64 hover:bg-green-500 hover:bg-opacity-10 duration-300 item"
                         v-for="item in listSurah" :key="item.nomor">
                         <span class="text-xs text-end block font-medium">{{ item.tempatTurun }} ({{ item.tempatTurun ==
@@ -44,7 +44,7 @@
                             <span class="text-start block font-semibold">{{ item.arti }}</span>
                             <span class="text-start block">Jumlah ayat: {{ item.jumlahAyat }}</span>
                         </div>
-                    </router-link>
+                    </a>
                 </div>
             </div>
         </div>

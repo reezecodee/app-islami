@@ -5,6 +5,7 @@ import AsmaulHusnaView from "../views/AsmaulHusnaView.vue";
 import BacaAlQuranView from "../views/BacaAlQuranView.vue";
 import DoaHarianView from "../views/DoaHarianView.vue";
 import ErrorView from "../views/ErrorView.vue";
+import BacaSurahQuranView from "../views/BacaSurahQuranView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -50,6 +51,11 @@ const router = createRouter({
       },
     },
     {
+      path: "/baca-al-quran/surah/:id",
+      name: "Al-Fatihah",
+      component: BacaSurahQuranView,
+    },
+    {
       path: "/error",
       name: "404 Not Found",
       component: ErrorView,
@@ -57,6 +63,7 @@ const router = createRouter({
         title: "404 Not Found - App Islami",
       },
     },
+    { path: "/:pathMatch(.*)", redirect: "/error" },
   ],
 });
 
