@@ -37,7 +37,7 @@ const router = createRouter({
       name: "Baca Al-Qur'an",
       component: BacaAlQuranView,
       meta: {
-        title: "Baca Al-Quran - App Islami",
+        title: "Baca Al-Qur'an - App Islami",
       },
     },
     {
