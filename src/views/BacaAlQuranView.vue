@@ -23,8 +23,9 @@
             </div>
             <div class="flex justify-center flex-col items-center gap-2 mt-6" v-if="terakhirBaca">
                 <div>
-                    Terakhir dibaca: <router-link to="" class="text-green-500 hover:no-underline underline">{{ terakhirBaca
-                    }}</router-link>
+                    Terakhir dibaca: <a :href="'/baca-al-quran/surah/' + anchorAyat"
+                        class="text-green-500 hover:no-underline underline">{{ terakhirBaca
+                        }}</a>
                 </div>
                 <button @click="clearBookmark()"
                     class="py-2 px-3 bg-green-500 hover:bg-green-600 duration-300 rounded-lg text-sm"><i
@@ -57,6 +58,7 @@ import MainLayout from '@/layout/MainLayout.vue';
 import axios from 'axios';
 
 const terakhirBaca = ref(localStorage.getItem('terakhir-baca'));
+const anchorAyat = ref(localStorage.getItem('anchor-ayat'));
 
 const listSurah = ref([]);
 const textInput = ref(null);
