@@ -68,7 +68,7 @@ onMounted(async () => {
         const response = await axios.get('https://equran.id/api/v2/surat');
         listSurah.value = response.data.data;
     } catch (error) {
-        console.log(error);
+        window.location.href = '/error'
     }
 });
 
