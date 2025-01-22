@@ -1,14 +1,11 @@
-<template>
-    <MainLayout>
-        
-    </MainLayout>
-</template>
-
 <script setup>
-import MainLayout from '@/layout/MainLayout.vue';
-
 
 </script>
+
+<template>
+    
+</template>
+
 
 <style lang="scss" scoped>
 
