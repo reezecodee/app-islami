@@ -34,3 +34,5 @@ src/components/AsmaulHusna
 src/components/BacaAlQuran
 src/components/DoaHarian
 src/components/JadwalSHolat
+
+.env
