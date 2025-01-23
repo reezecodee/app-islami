@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar.vue';
 <template>
     <section id="content">
         <div
-            class="px-3 md:px-14 container mx-auto h-auto flex justify-center mt-32 md:mt-20 text-center overflow-y-auto">
+            class="px-3 md:px-10 container mx-auto h-auto flex justify-center mt-32 md:mt-20 text-center overflow-y-auto">
             <slot></slot>
         </div>
     </section>

@@ -6,6 +6,7 @@ import BacaAlQuranView from "../views/BacaAlQuranView.vue";
 import DoaHarianView from "../views/DoaHarianView.vue";
 import ErrorView from "../views/ErrorView.vue";
 import BacaSurahQuranView from "../views/BacaSurahQuranView.vue";
+import NiatSholatView from "../views/NiatSholatView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL ?? '/'),
@@ -40,6 +41,14 @@ const router = createRouter({
       component: BacaAlQuranView,
       meta: {
         title: "Baca Al-Qur'an - App Islami",
+      },
+    },
+    {
+      path: "/niat-sholat",
+      name: "Niat Sholat",
+      component: NiatSholatView,
+      meta: {
+        title: "Niat Sholat - App Islami",
       },
     },
     {

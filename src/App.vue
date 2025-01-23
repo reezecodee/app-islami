@@ -5,9 +5,8 @@ import MainLayout from '@/layout/MainLayout.vue';
 
 <template>
   <MainLayout>
-      <RouterView />
+    <RouterView/>
   </MainLayout>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

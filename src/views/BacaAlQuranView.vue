@@ -62,13 +62,11 @@ const clearBookmark = computed(() => {
         <h1 class="text-4xl font-semibold my-4">Baca Al-Qur'an</h1>
         <p class="mb-2">"Sesungguhnya Allah tidak melihat fisik <br class="hidden md:block">dan harta kalian
             tetapi ia melihat hati dan amal kalian."</p>
-        <form action="" method="post" class="flex justify-center gap-x-3 mt-7">
+        <div class="flex justify-center gap-x-3 mt-7">
             <input type="text" placeholder="Cari surah..." name="" id="search"
                 class="border-[3.5px] border-gray-500 focus:outline-none focus:border-green-500 rounded-xl p-2.5 text-gray-800 w-full md:w-[30rem] font-medium placeholder:font-medium block"
                 ref="textInput" autocomplete="off">
-            <button class="bg-green-500 hover:bg-green-600 duration-300 py-2.5 px-5 rounded-xl" type="submit">
-                Search</button>
-        </form>
+        </div>
         <div class="flex justify-center items-center gap-2 mt-6">
             <div
                 class="py-0.5 px-2.5 text-xs bg-green-500 bg-opacity-30 border border-green-500 font-semibold rounded-md">
@@ -92,7 +90,7 @@ const clearBookmark = computed(() => {
         <div class="mt-14 md:mt-20 mb-56">
             <div class="flex flex-wrap justify-normal md:justify-around gap-7" id="list-surah">
                 <a :href="'/baca-al-quran/surah/' + item.nomor"
-                    class="p-3 border-2 border-green-500 rounded-lg w-full md:w-64 hover:bg-green-500 hover:bg-opacity-10 duration-300 item"
+                    class="p-3 border-2 border-green-500 rounded-lg w-full md:w-72 hover:bg-green-500 hover:bg-opacity-10 duration-300 item"
                     v-for="item in listSurah" :key="item.nomor">
                     <span class="text-xs text-end block font-medium">{{ item.tempatTurun }} ({{ item.tempatTurun ==
                         'Mekah' ? 'Makkiyyah' : 'Madaniyyah' }})</span>
