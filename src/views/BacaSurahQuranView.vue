@@ -42,7 +42,7 @@ const bookmarkAyat = (nomorSurah, surah, ayat) => {
 
 <template>
     <div>
-        <h2 class="text-4xl font-semibold my-2">{{ surah.nama }}</h2>
+        <h2 class="text-4xl font-semibold my-2 font-scheherazade-regular">{{ surah.nama }}</h2>
         <h1 class="mb-1 text-4xl font-extrabold ">{{ surah.namaLatin }}</h1>
         <span class="font-semibold text-lg mb-7">{{ surah.arti }}. Surah ke-{{ surah.nomor }}. {{ surah.tempatTurun
             ==
@@ -81,7 +81,7 @@ const bookmarkAyat = (nomorSurah, surah, ayat) => {
                     {{
                         ayat.nomorAyat }}
                 </div>
-                <h2 class="text-end text-4xl block">{{ ayat.teksArab }}</h2>
+                <h2 class="text-end text-4xl block font-scheherazade-regular">{{ ayat.teksArab }}</h2>
                 <p class="text-end block italic text-green-500 mt-3" :class="{ 'hidden': isLatin }">{{ ayat.teksLatin
                     }}
                 </p>

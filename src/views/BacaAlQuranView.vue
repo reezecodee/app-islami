@@ -95,7 +95,7 @@ const clearBookmark = computed(() => {
                     <span class="text-xs text-end block font-medium">{{ item.tempatTurun }} ({{ item.tempatTurun ==
                         'Mekah' ? 'Makkiyyah' : 'Madaniyyah' }})</span>
                     <h5 class="text-start text-xl font-semibold block">{{ item.nomor }}. {{ item.namaLatin }}</h5>
-                    <span class="text-end block text-2xl">{{ item.nama }}</span>
+                    <span class="text-end block text-2xl font-scheherazade-regular">{{ item.nama }}</span>
                     <div class="text-sm">
                         <span class="text-start block font-semibold">{{ item.arti }}</span>
                         <span class="text-start block">Jumlah ayat: {{ item.jumlahAyat }}</span>

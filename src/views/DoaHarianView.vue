@@ -73,7 +73,7 @@ onMounted(() => {
                 class="p-6 border-2 border-green-500 rounded-lg w-full hover:bg-green-500 hover:bg-opacity-10 duration-300 mb-5 item">
                 <span class="text-xl text-start block font-semibold mb-5">{{ item.urutan }}. {{ item.namaDoa
                     }}</span>
-                <h5 class="text-end text-3xl font-semibold block mb-3">{{ item.arab }}</h5>
+                <h5 class="text-end text-3xl font-scheherazade-regular font-semibold block mb-3">{{ item.arab }}</h5>
                 <div class="text-sm">
                     <span class="text-start block font-medium leading-5">{{ item.arti }}</span>
                 </div>

@@ -74,7 +74,7 @@ onMounted(() => {
                 <div v-for="item in listItem" :key="item.urutan"
                     class="p-5 border-2 border-green-500 rounded-lg w-full md:w-72 hover:bg-green-500 hover:bg-opacity-10 duration-300 item">
                     <span class="text-2xl text-start block font-semibold">{{ item.urutan }}.</span>
-                    <h5 class="text-end text-4xl font-semibold block">{{ item.arab }}</h5>
+                    <h5 class="text-end text-4xl font-scheherazade-regular font-semibold block">{{ item.arab }}</h5>
                     <span class="text-start block text-xl font-semibold mr-3">{{ item.latin }}</span>
                     <div class="text-xs">
                         <span class="text-start block font-medium">{{ item.artinya }}</span>
