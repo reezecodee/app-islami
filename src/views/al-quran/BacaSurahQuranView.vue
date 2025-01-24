@@ -81,7 +81,7 @@ const bookmarkAyat = (nomorSurah, surah, ayat) => {
                     {{
                         ayat.nomorAyat }}
                 </div>
-                <h2 class="text-end text-4xl block font-scheherazade-regular">{{ ayat.teksArab }}</h2>
+                <h2 class="text-end text-4xl block font-scheherazade-regular leading-loose">{{ ayat.teksArab }}</h2>
                 <p class="text-end block italic text-green-500 mt-3" :class="{ 'hidden': isLatin }">{{ ayat.teksLatin
                     }}
                 </p>

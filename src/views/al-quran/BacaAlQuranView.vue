@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted, computed } from 'vue';
 import axios from 'axios';
+import HeaderContent from '@/components/HeaderContent.vue';
 
 const terakhirBaca = ref(localStorage.getItem('terakhir-baca'));
 const anchorAyat = ref(localStorage.getItem('anchor-ayat'));
@@ -55,27 +56,18 @@ const clearBookmark = computed(() => {
     window.location.reload();
 });
 </script>
-
 <template>
     <div>
-        <img src="https://www.svgrepo.com/show/235405/quran-quran.svg" class="w-20 inline-block" alt="" srcset="">
-        <h1 class="text-4xl font-semibold my-4">Baca Al-Qur'an</h1>
-        <p class="mb-2">"Sesungguhnya Allah tidak melihat fisik <br class="hidden md:block">dan harta kalian
-            tetapi ia melihat hati dan amal kalian."</p>
-        <div class="flex justify-center gap-x-3 mt-7">
-            <input type="text" placeholder="Cari surah..." name="" id="search"
-                class="border-[3.5px] border-gray-500 focus:outline-none focus:border-green-500 rounded-xl p-2.5 text-gray-800 w-full md:w-[30rem] font-medium placeholder:font-medium block"
-                ref="textInput" autocomplete="off">
-        </div>
-        <div class="flex justify-center items-center gap-2 mt-6">
-            <div
-                class="py-0.5 px-2.5 text-xs bg-green-500 bg-opacity-30 border border-green-500 font-semibold rounded-md">
-                Ctrl</div>
-            <i class="fas fa-plus text-xs"></i>
-            <div
-                class="py-0.5 px-2.5 text-xs bg-green-500 bg-opacity-30 border border-green-500 font-semibold rounded-md">
-                K</div>
-        </div>
+        <HeaderContent img="al-quran" text-title="Baca Al-Qur'an">
+            <p class="mb-2">"Sesungguhnya Allah tidak melihat fisik <br class="hidden md:block">dan harta kalian
+                tetapi ia melihat hati dan amal kalian."</p>
+            <div class="flex justify-center gap-x-3 mt-7">
+                <input type="text" placeholder="Cari surah..." name="" id="search"
+                    class="border-[3.5px] border-gray-500 focus:outline-none focus:border-green-500 rounded-xl p-2.5 text-gray-800 w-full md:w-[30rem] font-medium placeholder:font-medium block"
+                    ref="textInput" autocomplete="off">
+            </div>
+        </HeaderContent>
+
         <div class="flex justify-center flex-col items-center gap-2 mt-6" v-if="terakhirBaca">
             <div>
                 Terakhir dibaca: <a :href="'/baca-al-quran/surah/' + anchorAyat"
@@ -95,7 +87,7 @@ const clearBookmark = computed(() => {
                     <span class="text-xs text-end block font-medium">{{ item.tempatTurun }} ({{ item.tempatTurun ==
                         'Mekah' ? 'Makkiyyah' : 'Madaniyyah' }})</span>
                     <h5 class="text-start text-xl font-semibold block">{{ item.nomor }}. {{ item.namaLatin }}</h5>
-                    <span class="text-end block text-2xl font-scheherazade-regular">{{ item.nama }}</span>
+                    <span class="text-end block text-3xl font-scheherazade-regular">{{ item.nama }}</span>
                     <div class="text-sm">
                         <span class="text-start block font-semibold">{{ item.arti }}</span>
                         <span class="text-start block">Jumlah ayat: {{ item.jumlahAyat }}</span>

@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
-import JadwalSholatView from "../views/JadwalSholatView.vue";
-import AsmaulHusnaView from "../views/AsmaulHusnaView.vue";
-import BacaAlQuranView from "../views/BacaAlQuranView.vue";
-import DoaHarianView from "../views/DoaHarianView.vue";
-import ErrorView from "../views/ErrorView.vue";
-import BacaSurahQuranView from "../views/BacaSurahQuranView.vue";
-import NiatSholatView from "../views/NiatSholatView.vue";
+import HomeView from "@/views/HomeView.vue";
+import JadwalSholatView from "@/views/jadwal/JadwalSholatView.vue";
+import AsmaulHusnaView from "@/views/asmaul-husna/AsmaulHusnaView.vue";
+import BacaAlQuranView from "@/views/al-quran/BacaAlQuranView.vue";
+import BacaSurahQuranView from "@/views/al-quran/BacaSurahQuranView.vue";
+import DoaHarianView from "@/views/doa/DoaHarianView.vue";
+import NiatSholatView from "@/views/niat-sholat/NiatSholatView.vue";
+import ErrorView from "@/views/ErrorView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL ?? '/'),
