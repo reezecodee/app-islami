@@ -2,21 +2,15 @@
 import { ref, onMounted, computed } from 'vue';
 import axios from 'axios';
 import HeaderContent from '@/components/HeaderContent.vue';
+import { useApiDataStore } from '@/stores/apiDataStore.js';
+
+const { state } = useApiDataStore();
 
 const terakhirBaca = ref(localStorage.getItem('terakhir-baca'));
 const anchorAyat = ref(localStorage.getItem('anchor-ayat'));
 
-const listSurah = ref([]);
+const listSurah = state.surah;
 const textInput = ref(null);
-
-onMounted(async () => {
-    try {
-        const response = await axios.get('https://equran.id/api/v2/surat');
-        listSurah.value = response.data.data;
-    } catch (error) {
-        window.location.href = '/error'
-    }
-});
 
 onMounted(() => {
     window.addEventListener('keydown', handleKeyDown);

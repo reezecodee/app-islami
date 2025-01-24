@@ -2,18 +2,12 @@
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
 import HeaderContent from '@/components/HeaderContent.vue';
+import { useApiDataStore } from '@/stores/apiDataStore.js';
 
-const listItem = ref([]);
+const { state } = useApiDataStore();
+
+const listItem = state.asmaulHusna;
 const textInput = ref(null);
-
-onMounted(async () => {
-    try {
-        const response = await axios.get('https://islami-api.vercel.app/api/asmaul-husna/all');
-        listItem.value = response.data.data;
-    } catch (error) {
-        window.location.href = '/error';
-    }
-});
 
 onMounted(() => {
     window.addEventListener('keydown', handleKeyDown);
