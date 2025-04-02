@@ -4,11 +4,19 @@ import HeaderContent from '@/components/HeaderContent.vue';
 
 <template>
     <div>
-        <HeaderContent img="niat-sholat" text-title="Niat Sholat">
+        <HeaderContent img="niat-sholat" text-title="Niat Sholat" :keyCaps="false">
             <p class="mb-2">Niat yang benar menunjukkan bahwa kita melakukan sholat karena Allah SWT semata, bukan
                 karena
                 sebab-sebab lain seperti riya (ingin dipuji orang), sum'ah (ingin terkenal), atau karena paksaan.</p>
         </HeaderContent>
+
+        <div class="flex justify-center">
+            <router-link to="/jadwal-sholat">
+                <button class="bg-green-500 hover:bg-green-600 duration-300 p-2 text-white font-medium rounded-md mt-3">
+                    <i class="fas fa-search"></i> Cek Jadwal Sholat
+                </button>
+            </router-link>
+        </div>
 
         <div class="flex justify-center gap-x-3 mt-7">
             <router-link to="/" class="w-full">

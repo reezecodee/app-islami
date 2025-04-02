@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "@/views/HomeView.vue";
-import JadwalSholatView from "@/views/jadwal/JadwalSholatView.vue";
 import AsmaulHusnaView from "@/views/asmaul-husna/AsmaulHusnaView.vue";
 import BacaAlQuranView from "@/views/al-quran/BacaAlQuranView.vue";
 import BacaSurahQuranView from "@/views/al-quran/BacaSurahQuranView.vue";
@@ -17,14 +16,6 @@ const router = createRouter({
       component: HomeView,
       meta: {
         title: "Home - App Islami",
-      },
-    },
-    {
-      path: "/jadwal-sholat",
-      name: "Jadwal Sholat",
-      component: JadwalSholatView,
-      meta: {
-        title: "Jadwal Sholat - App Islami",
       },
     },
     {

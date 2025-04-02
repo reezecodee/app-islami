@@ -7,12 +7,6 @@
                     <i class="fas fa-home"></i>
                     <p class="text-xs md:text-sm hidden md:block">Home</p>
                 </router-link>
-                <router-link to="/jadwal-sholat"
-                    :class="{ 'text-green-400 hover:text-green-500': $route.path.match('/jadwal-sholat') }"
-                    class="text-center hover:text-gray-400 duration-100">
-                    <i class="fas fa-calendar-week"></i>
-                    <p class="text-xs md:text-sm hidden md:block">Jadwal Sholat</p>
-                </router-link>
                 <router-link to="/baca-al-quran"
                     :class="{ 'text-green-400 hover:text-green-500': $route.path.match('/baca-al-quran') }"
                     class="text-center hover:text-gray-400 duration-100">
