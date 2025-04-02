@@ -19,7 +19,7 @@ import HeaderContent from '@/components/HeaderContent.vue';
         </div>
 
         <div class="flex justify-center gap-x-3 mt-7">
-            <router-link to="/" class="w-full">
+            <router-link to="/niat-sholat/daftar/wajib" class="w-full">
                 <div
                     class="p-6 border-2 border-green-500 rounded-lg hover:bg-green-500 hover:bg-opacity-10 duration-300 mb-5 item">
                     <span class="text-xl text-start block font-semibold mb-3">Niat Sholat Wajib</span>
@@ -31,7 +31,7 @@ import HeaderContent from '@/components/HeaderContent.vue';
                     </div>
                 </div>
             </router-link>
-            <router-link to="/" class="w-full">
+            <router-link to="/niat-sholat/daftar/sunnah" class="w-full">
                 <div
                     class="p-6 border-2 border-green-500 rounded-lg hover:bg-green-500 hover:bg-opacity-10 duration-300 mb-5 item">
                     <span class="text-xl text-start block font-semibold mb-3">Niat Sholat Sunnah</span>

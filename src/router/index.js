@@ -5,6 +5,7 @@ import BacaAlQuranView from "@/views/al-quran/BacaAlQuranView.vue";
 import BacaSurahQuranView from "@/views/al-quran/BacaSurahQuranView.vue";
 import DoaHarianView from "@/views/doa/DoaHarianView.vue";
 import NiatSholatView from "@/views/niat-sholat/NiatSholatView.vue";
+import BacaanNiatSholatView from "@/views/niat-sholat/BacaanNiatSholatView.vue";
 import ErrorView from "@/views/ErrorView.vue";
 
 const router = createRouter({
@@ -43,6 +44,11 @@ const router = createRouter({
       },
     },
     {
+      path: "/niat-sholat/daftar/:type",
+      name: "Daftar Niat Sholat",
+      component: BacaanNiatSholatView,
+    },
+    {
       path: "/doa-harian",
       name: "Do'a Harian",
       component: DoaHarianView,
@@ -52,7 +58,7 @@ const router = createRouter({
     },
     {
       path: "/baca-al-quran/surah/:id",
-      name: "Al-Fatihah",
+      name: "Baca Surah Al-Qur'an",
       component: BacaSurahQuranView,
     },
     {
