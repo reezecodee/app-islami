@@ -3,7 +3,7 @@ import axios from "axios";
 import { reactive } from "vue";
 
 export const useApiDataStore = defineStore("apiDataStore", () => {
-  const state = reactive ({
+  const state = reactive({
     surah: null,
     asmaulHusna: null,
     doaHarian: null,
@@ -42,7 +42,9 @@ export const useApiDataStore = defineStore("apiDataStore", () => {
       state.isError = true;
       console.log(error);
     } finally {
-      state.isLoading = false;
+      setTimeout(() => {
+        state.isLoading = false;
+      }, 2000);
     }
   }
 

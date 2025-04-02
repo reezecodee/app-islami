@@ -4,7 +4,7 @@
 
 <template>
     <div>
-        <div class="flex justify-center flex-col items-center h-screen">
+        <div class="flex justify-center flex-col items-center mt-10">
             <img src="https://cdn-icons-png.flaticon.com/128/8576/8576437.png" class="w-20" alt="" srcset="">
             <h1 class="text-3xl md:text-5xl font-extrabold">404: Not Found</h1>
             <p class="font-medium text-xl text-center">Konten yang Anda coba cari tidak ditemukan</p>
