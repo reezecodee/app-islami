@@ -1,7 +1,7 @@
 <template>
     <header id="header">
-        <nav class="fixed z-10 py-5 md:py-3 bg-gray-800 w-full border-t-2 border-green-500 bottom-0 right-0 left-0 px-0 md:px-5 container mx-auto rounded-t-md">
-            <div class="flex justify-between text-xl px-10 font-semibold">
+        <nav class="fixed z-10 py-7 md:py-3 bg-gray-800 w-full border-t-2 border-green-500 bottom-0 right-0 left-0 px-0 md:px-5 container mx-auto rounded-t-md">
+            <div class="flex justify-between text-2xl md:text-xl px-10 font-semibold">
                 <router-link to="/" :class="{ 'text-green-400 hover:text-green-500': $route.path === '/' }"
                     class="text-center hover:text-gray-400 duration-100">
                     <i class="fas fa-home"></i>

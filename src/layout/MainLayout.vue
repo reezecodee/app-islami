@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar.vue';
 
 <template>
   <section id="content">
-    <div class="px-3 md:px-10 container mx-auto h-auto flex justify-center mt-32 md:mt-20 text-center">
+    <div class="px-3 md:px-10 container mx-auto h-auto flex justify-center mt-28 md:mt-16 text-center">
       <Transition name="fade">
         <slot></slot>
       </Transition>
