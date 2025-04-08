@@ -28,7 +28,7 @@ const realtime = computed(() => {
 
 <template>
     <div>
-        <div class="text-center">
+        <div class="text-center mt-3 md:mt-0">
             <img src="/img/masjid.png" class="w-20 inline-block mt-0 lg:mt-12"
                 alt="" srcset="">
             <h1 class="text-3xl md:text-4xl font-semibold my-4">Selamat {{ greeting() }}</h1>

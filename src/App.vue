@@ -16,7 +16,7 @@ onMounted(() => {
         <div class="loading" v-if="state.isLoading">
           <div>
             <div class="flex justify-center mb-4">
-                <img src="/img/masjid.png" alt="" srcset="" class="w-24">
+                <img src="/img/masjid.png" alt="" srcset="" class="w-20 md:w-24">
             </div>
             <p class="font-semibold text-sm md:text-base">Konten sedang dimuat...</p>
           </div>
